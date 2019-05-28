@@ -20,14 +20,14 @@ public class Domain {
         session.beginTransaction();
 
         Address address = new Address();
-        address.setCountry("CZ");
-        address.setCity("Praha");
-        address.setStreet("Chaloupeckeho");
-        address.setPostCode("16900");
+        address.setCountry("USA");
+        address.setCity("NY");
+        address.setStreet("Liberty st.");
+        address.setPostCode("10032");
 
         Employee employee = new Employee();
-        employee.setFirstName("Darkhan");
-        employee.setLastName("Bailov");
+        employee.setFirstName("John");
+        employee.setLastName("Doe");
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(1996, Calendar.MARCH, 7);
@@ -36,7 +36,7 @@ public class Domain {
         employee.setAddress(address);
 
         Project project = new Project();
-        project.setTitle("Diploma");
+        project.setTitle("New Life");
 
         Set<Project> projects = new HashSet<Project>();
         projects.add(project);
